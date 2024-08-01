@@ -57,6 +57,21 @@ function videoOverlay() {
     }
 }
 
+function stepsScroll() {
+    const stepItems = document.querySelectorAll('.step')
+
+    if (stepItems.length) {
+        stepItems.forEach(function(step) {
+            window.addEventListener('scroll', function () {
+                if (step.getBoundingClientRect().top < this.window.innerHeight / 2) {
+                    step.classList.add('active')
+                }
+            })
+        })
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     videoOverlay()
+    stepsScroll( )
 })
