@@ -495,9 +495,7 @@ span {
     }
     .video-player {
         width: 95vw;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
+        height: auto;
     }
 }
 
