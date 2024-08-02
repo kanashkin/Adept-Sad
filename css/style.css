@@ -1061,7 +1061,6 @@ span {
 
 .info__card {
     position: relative;
-    z-index: -1;
 }
 
 .info__card-content {
