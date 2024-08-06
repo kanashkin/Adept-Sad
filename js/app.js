@@ -65,6 +65,8 @@ function stepsScroll() {
             window.addEventListener('scroll', function () {
                 if (step.getBoundingClientRect().top < this.window.innerHeight / 2) {
                     step.classList.add('active')
+                } else {
+                    step.classList.remove('active')
                 }
             })
         })
